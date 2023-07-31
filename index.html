@@ -514,12 +514,7 @@
           <div class="form-modal">
             <label for="name" class="form-text">Name</label>
             <input type="text" name="name" id="name" />
-      
-            <svg class="icons-form">
-              <use
-                src="images/icons.svg/symbol-defs.svg#icon-person-black"
-              ></use>
-            </svg>
+            <img class="icons-form" src="./images/icons.svg/person.svg" />
           </div>
 
           <label class="form-modal">
@@ -559,9 +554,12 @@
               name="agreement"
               value="agree"
             />
-            <svg class="icon" width="16" height="16">
-              <use src="images/icons.svg/symbol-defs.svg#icon-icon-check"></use>
-            </svg>
+            <img
+              class="icon"
+              width="16"
+              height="16"
+              src="images/icons.svg/icon-check.svg"
+            />
 
             <span class="service-text">
               I agree with the newsletter and accept the
@@ -588,16 +586,19 @@
     <script src="./js/modal.js"></script>
 
     <form class="subscribe-form">
-      <label class="form-label">
+      <div class="subscribe-label">
         <span class="label-text">Subscribe to the newsletter</span>
-        <input
-          type="text"
-          class="form-input"
-          name="username"
-          placeholder=" E-mail"
-          required
-        />
-      </label>
+        <label class="form-label">
+          <input
+            type="text"
+            class="form-input"
+            name="username"
+            placeholder="E-mail"
+            required
+          />
+        </label>
+      </div>
+
       <div>
         <button class="subscribe-btn" type="submit">Subscribe</button>
 
