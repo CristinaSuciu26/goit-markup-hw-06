@@ -808,7 +808,9 @@ p {
   border-radius: 4px;
   border: 1px solid #2196f3;
 }
-
+.form-modal input:focus-within > svg {
+  color: #2196F3;
+}
 .form-modal.terms-conditions-checkbox {
   flex-direction: row;
   align-items: center;
@@ -868,17 +870,18 @@ p {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agree-check .checkmark:focus + svg,
-.agree-check .checkmark:checked:focus {
+.agree-check .checkmark:focus+.icon,
+.agree-check .checkmark:checked:focus+.icon {
   outline: 2px solid #212121;
-  background-color: #fff;
 }
 
-.agree-check .checkmark:checked + svg {
+.agree-check .checkmark:checked+.icon {
   background-color: #2196f3;
   border-color: #2196f3;
+  fill: #ffffff;
   outline: none;
-  color: #fff;
+  stroke: #fff;
+  stroke-width: 0.2;
 }
 
 .input-icon {
