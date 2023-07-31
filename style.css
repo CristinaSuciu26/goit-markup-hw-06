@@ -287,7 +287,6 @@ p {
   height: 251px;
   flex-shrink: 0;
   background: #2f303a;
-
 }
 
 .address {
@@ -797,6 +796,10 @@ p {
   margin-left: 19px;
   margin-top: 40px;
 }
+.icons-form:hover{
+  filter: invert(0.4) sepia(1) saturate(15.7) hue-rotate(183.6deg)
+  brightness(0.95);
+}
 .form-modal input {
   flex: 2;
   width: 100%;
@@ -809,7 +812,7 @@ p {
   border-radius: 4px;
   border: 1px solid #2196f3;
 }
-.form-modal input:focus-within > svg {
+.form-modal input:focus-within{
   color: #2196f3;
 }
 .form-modal.terms-conditions-checkbox {
@@ -860,35 +863,41 @@ p {
   border-radius: 4px;
   color: #fff;
 }
+
+.agree-check input[type="checkbox"] {
+  display: none;
+}
+
 .agree-check .icon {
+  display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 7px;
-  border: 2px solid #000;
   border-radius: 2px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: url("./images/vector.png");
 }
 
-.agree-check .checkmark:focus + .icon,
-.agree-check .checkmark:checked:focus + .icon {
-  outline: 2px solid #212121;
+.agree-check input[type="checkbox"]:checked + .icon {
+  background-color: #0078d4;
+  border-color: #0078d4;
+  background: url("./images/iconcheck.png");
+  width: 16px;
+  height: 15px;
+  padding: 7px;
 }
 
-.agree-check .checkmark:checked + .icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  color: #ffffff;
-  outline: none;
+.agree-check .service-text {
+  margin-left: 5px;
+  margin-top: 18px;
 }
-
 .input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   width: 18px;
   height: 18px;
+}
+.icon{
+  margin-top: 17px;
 }
 .form-modal input:focus-within > .icon {
   color: #2196f3;
@@ -962,8 +971,6 @@ p {
 .form-label {
   width: 358px;
   height: 50px;
-
-
 }
 .label-text {
   color: #fff;
@@ -977,7 +984,6 @@ p {
   display: flex;
   margin-left: 6px;
   margin-top: -13px;
-
 }
 .form-input {
   width: 358px;
@@ -987,9 +993,9 @@ p {
   margin-top: 5px;
   background-color: transparent;
   border-radius: 4px;
-border: 1px solid rgba(255, 255, 255, 0.30);
-background: rgba(33, 150, 243, 0.00);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .subscribe-btn {
   width: 200px;
@@ -1013,6 +1019,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .subscribe-label {
   position: relative;
 }
-.form-portofolio{
+.form-portofolio {
   margin-top: -591px;
 }
