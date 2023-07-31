@@ -868,14 +868,13 @@ p {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agree-check .checkmark:focus + .icon,
-.agree-check .checkmark:checked:focus::before {
-  content: "";
+.agree-check .checkmark:focus + svg,
+.agree-check .checkmark:checked:focus {
   outline: 2px solid #212121;
   background-color: #fff;
 }
 
-.agree-check .checkmark:checked + .icon {
+.agree-check .checkmark:checked + svg {
   background-color: #2196f3;
   border-color: #2196f3;
   outline: none;
@@ -889,7 +888,7 @@ p {
   width: 18px;
   height: 18px;
 }
-.form-modal input:focus-within > img {
+.form-modal input:focus-within > svg {
   color: #2196f3;
 }
 .textarea {
