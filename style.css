@@ -94,7 +94,7 @@ p {
   font-style: normal;
 }
 .studio-section,
-.portofolio-section,
+.portfolio-section,
 .contacts-section {
   color: #212121;
   font-size: 14px;
@@ -177,7 +177,7 @@ p {
 }
 
 .studio-section,
-.portofolio-section {
+.portfolio-section {
   margin-right: 50px;
 }
 .studio-top {
@@ -796,10 +796,7 @@ p {
   margin-left: 19px;
   margin-top: 40px;
 }
-.icons-form:hover{
-  filter: invert(0.4) sepia(1) saturate(15.7) hue-rotate(183.6deg)
-  brightness(0.95);
-}
+
 .form-modal input {
   flex: 2;
   width: 100%;
@@ -807,14 +804,28 @@ p {
   padding: 0px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-.form-modal input:focus {
+.form-modal input:focus-within {
   outline: none;
   border-radius: 4px;
   border: 1px solid #2196f3;
+
 }
-.form-modal input:focus-within{
-  color: #2196f3;
+.icons-form {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 12px;
+
 }
+
+.svg-icon {
+  fill: currentColor;
+}
+.svg-icon.focus {
+  fill: blue;
+}
+
 .form-modal.terms-conditions-checkbox {
   flex-direction: row;
   align-items: center;
@@ -896,7 +907,7 @@ p {
   width: 18px;
   height: 18px;
 }
-.icon{
+.icon {
   margin-top: 17px;
 }
 .form-modal input:focus-within > .icon {
@@ -922,13 +933,7 @@ p {
   align-items: flex-start;
   margin-top: 20px;
 }
-.icons-form {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  margin-top: 32px;
-  margin-left: 12px;
-}
+
 .form-text {
   color: #757575;
   font-family: Roboto;

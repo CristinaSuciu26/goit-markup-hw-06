@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./js/svg.js" />
     <link rel="stylesheet" href="modern-normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -30,8 +30,8 @@
                 <li class="studio-section current">
                   <a href="index.html">Studio</a>
                 </li>
-                <li class="portofolio-section">
-                  <a href="portofolio.html">Portofolio</a>
+                <li class="portfolio-section">
+                  <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="contacts-section">Contacts</li>
               </div>
@@ -520,16 +520,51 @@
           <label class="form-modal">
             <span class="form-text">Telephone</span>
             <input type="tel" id="phone" />
-            <img
+            <svg class="icons-form">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-phone-black"> 
+
+              </use>
+            </svg>
+<!--
+     <img
               class="icons-form"
               src="images/icons.svg/phone-black.svg"
+              class="svg-icon"
               alt="svg"
             />
+
+            <script>
+              const svgIcon = document.querySelector(".svg-icon");
+
+              svgIcon.addEventListener("focus", function () {
+                svgIcon.classList.add("focus");
+              });
+
+              svgIcon.addEventListener("blur", function () {
+                svgIcon.classList.remove("focus");
+              });
+            </script>
+-->
+       
+
+            <!--  
+            <object
+              class="icons-form"
+              class="svg-icon"
+              type="image/svg+xml"
+              data="images/icons.svg/phone-black.svg"
+            ></object>
+          -->
           </label>
 
           <label class="form-modal">
             <span class="form-text">E-mail</span>
             <input type="email" name="email" />
+            <img
+              class="icons-form"
+              src="images/icons.svg/phone-black.svg"
+              alt="svg"
+            />
 
             <img
               class="icons-form"
@@ -554,7 +589,7 @@
               name="agreement"
               value="agree"
             />
-       <span class="icon"></span>
+            <span class="icon"></span>
 
             <span class="service-text">
               I agree with the newsletter and accept the
