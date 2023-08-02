@@ -514,7 +514,11 @@
           <div class="form-modal">
             <label for="name" class="form-text">Name</label>
             <input type="text" name="name" id="name" />
-            <img class="icons-form" src="./images/icons.svg/person.svg" />
+            <svg class="icons-form">
+              <use
+                xlink:href="./images/icons.svg/symbol-defs.svg#icon-person-black"
+              ></use>
+            </svg>
           </div>
 
           <label class="form-modal">
@@ -525,46 +529,11 @@
                 xlink:href="./images/icons.svg/symbol-defs.svg#icon-phone-black"
               ></use>
             </svg>
-            <!--
-     <img
-              class="icons-form"
-              src="images/icons.svg/phone-black.svg"
-              class="svg-icon"
-              alt="svg"
-            />
-
-            <script>
-              const svgIcon = document.querySelector(".svg-icon");
-
-              svgIcon.addEventListener("focus", function () {
-                svgIcon.classList.add("focus");
-              });
-
-              svgIcon.addEventListener("blur", function () {
-                svgIcon.classList.remove("focus");
-              });
-            </script>
--->
-
-            <!--  
-            <object
-              class="icons-form"
-              class="svg-icon"
-              type="image/svg+xml"
-              data="images/icons.svg/phone-black.svg"
-            ></object>
-          -->
           </label>
 
           <label class="form-modal">
             <span class="form-text">E-mail</span>
             <input type="email" name="email" />
-
-            <svg class="icons-form">
-              <use
-                xlink:href="./images/icons.svg/symbol-defs.svg#icon-person-black"
-              ></use>
-            </svg>
 
             <svg class="icons-form">
               <use
