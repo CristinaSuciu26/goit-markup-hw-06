@@ -804,7 +804,7 @@ p {
   padding: 0px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-.form-modal input:focus-within {
+.form-modal input:focus-within{
   outline: none;
   border-radius: 4px;
   border: 1px solid #2196f3;
@@ -818,7 +818,6 @@ p {
   margin-left: 12px;
 
 }
-
 .icons-form:focus {
   fill: blue; /* Culoarea implicită a SVG-ului */
   transition: fill 0.2s; /* Efect de tranziție pentru schimbarea culorii */
@@ -826,7 +825,7 @@ p {
 
 /* Stilizarea SVG la focus */
 input:focus + svg {
-  fill: red; /* Culoarea SVG-ului când elementul de intrare primește focus */
+  fill: blue; /* Culoarea SVG-ului când elementul de intrare primește focus */
 }
 
 .form-modal.terms-conditions-checkbox {
