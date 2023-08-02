@@ -819,7 +819,7 @@ p {
 
 }
 
-svg {
+.icons-form:focus {
   fill: blue; /* Culoarea implicită a SVG-ului */
   transition: fill 0.2s; /* Efect de tranziție pentru schimbarea culorii */
 }
