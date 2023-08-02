@@ -819,11 +819,14 @@ p {
 
 }
 
-.svg-icon {
-  fill: currentColor;
+svg {
+  fill: blue; /* Culoarea implicită a SVG-ului */
+  transition: fill 0.2s; /* Efect de tranziție pentru schimbarea culorii */
 }
-.svg-icon.focus {
-  fill: blue;
+
+/* Stilizarea SVG la focus */
+input:focus + svg {
+  fill: red; /* Culoarea SVG-ului când elementul de intrare primește focus */
 }
 
 .form-modal.terms-conditions-checkbox {
